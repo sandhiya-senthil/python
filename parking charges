@@ -1,0 +1,8 @@
+def calculate_parking_charges(X, Y, H):
+    if H == 1:
+        return X
+    else:
+        return X + (H - 1) * Y
+X, Y, H = map(int, input().split())
+total_charges = calculate_parking_charges(X, Y, H)
+print(total_charges)
